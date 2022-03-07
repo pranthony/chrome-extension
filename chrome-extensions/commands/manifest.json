@@ -1,0 +1,41 @@
+{
+    "name": "Comandos",
+    "description":"Activar tabs con comandis",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions":["scripting","activeTab","storage"],
+    "background":{
+        "service_worker":"background.js"
+    },
+    "action":{},
+    "commands": {
+        "_execute_action":{
+          "suggested_key":{
+              "default": "Ctrl+Shift+0"
+          }  
+        },
+        "flip-tabs-forward": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Right",
+                "mac": "Command+Shift+Right"
+            },
+            "description": "Flip tabs forward"
+        },
+        
+        
+        "flip-all-tabs":{
+            "suggested_key": {
+                "default": "Ctrl+Shift+Up"
+            },
+            "description": "ultimo tab"
+        },
+        "flip-tabs-backwards": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+Left",
+                "mac": "Command+Shift+Left"
+            },
+            "description": "Flip tabs backwards"
+        }
+        
+    }
+}

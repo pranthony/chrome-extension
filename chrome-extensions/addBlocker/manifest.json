@@ -1,0 +1,12 @@
+{
+    "manifest_version": 3,
+    "name": "add blocker",
+    "version":1,
+    "description":"sin anuncios",
+    "permissions":["scripting"],
+    
+    "background": {
+        "service_worker":"background.js"
+    }
+
+}
